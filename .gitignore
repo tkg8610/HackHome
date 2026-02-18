@@ -1,0 +1,21 @@
+# Build
+build/
+dist/
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+
+# ESP-IDF
+sdkconfig.old
+managed_components/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Env
+.env
+.env.local
