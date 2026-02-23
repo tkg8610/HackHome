@@ -19,7 +19,8 @@ managed_components/
 Thumbs.db
 desktop.ini
 
-# Env
+# Env / Secrets
 .env
 .env.local
 .env*.local
+secrets.txt

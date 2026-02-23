@@ -1,8 +1,13 @@
 #pragma once
 
 // ===== WiFi Settings =====
-#define WIFI_SSID "YOUR_SSID"
-#define WIFI_PASS "YOUR_PASSWORD"
+// WIFI_SSID and WIFI_PASS are loaded from secrets.txt via build flags.
+// Create v0.1/firmware/secrets.txt with:
+//   Line 1: SSID
+//   Line 2: Password
+#ifndef WIFI_SSID
+#error "secrets.txt not found! Create it in v0.1/firmware/ with SSID on line 1 and password on line 2."
+#endif
 
 // ===== Pin Definitions (M5Stamp S3) =====
 #define PIN_SERVO    1   // GPIO1 - Servo PWM
